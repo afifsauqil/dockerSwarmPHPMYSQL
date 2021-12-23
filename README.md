@@ -13,7 +13,7 @@ docker exec -ti <name_container_db> bash
 ```
 apt update && apt install nano
 ```
-copy from db/employees.sql to:
+copy from db/employees.sql to (container db):
 ```
 nano docker-entrypoint-initdb.d/employees.sql
 ```
