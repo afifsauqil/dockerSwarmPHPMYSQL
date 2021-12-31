@@ -16,6 +16,9 @@ services:
     networks:
       - afif-net
     deploy:
+#      labels:
+#        - traefik.http.routers.app.rule=Host('127.0.0.1')
+#        - traefik.http.services.app.loadbalancer.server.port=80
       placement:
           constraints:
               - node.role == manager
